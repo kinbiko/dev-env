@@ -4,7 +4,7 @@
 
 #Needed so that the installer won't try and look
 #in the installation cd for data.
-sed -i '/cdrom/d' /etc/apt/sources.list
+sudo sed -i '/cdrom/d' /etc/apt/sources.list
 
 echo "Removing any old/deprecated versions of docker"
 sudo apt-get purge "lxc-docker*" > /dev/null
