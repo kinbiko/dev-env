@@ -2,6 +2,10 @@
 
 ### apt-repository handling ###
 
+#Needed so that the installer won't try and look
+#in the installation cd for data.
+sed -i '/cdrom/d' /etc/apt/sources.list
+
 echo "Removing any old/deprecated versions of docker"
 sudo apt-get purge "lxc-docker*" > /dev/null
 sudo apt-get purge "docker.io*" > /dev/null
@@ -9,7 +13,7 @@ sudo apt-get purge "docker.io*" > /dev/null
 echo "Updating package repositories"
 sudo apt-get update > /dev/null
 echo "Installing transport-https and ca-certificates"
-sudo apt-get install apt-transport-https ca-certificates gnupg2
+sudo apt-get -y install apt-transport-https ca-certificates gnupg2
 
 echo "Adding keys for Docker"
 sudo apt-key adv \
