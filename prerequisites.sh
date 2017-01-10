@@ -1,5 +1,20 @@
 #!/bin/bash
 
+#Only run this script as root.
+checkThatYouAreRoot
+#If this fails, the bash version - and therefore probably also the OS,
+#is too old and unsafe to be suited as a development environment.
+if [ "$(sh ./shellshock-check.sh)" = VULNERABLE ]; then
+    echo "This system is not appropriate as a dev environment"
+    exit -1;
+fi
+
+#Remove the installation drive from sources
+#Some installations may decide to search the installation drive
+#for any of its dependencies(E.g. Docker). This should preferably
+#be downloaded from the internet instead.
+sed -i '/cdrom/d' /etc/apt/sources.list
+
 #ensure you are running these commands as root
 #Will exit with an error message if run as as a non-root user
 function checkThatYouAreRoot {
@@ -9,17 +24,6 @@ function checkThatYouAreRoot {
         echo "Please log in as root user."
         exit -1;
     fi
-}
-
-#Debian is free as in freedom, and therefore does not support all package
-#repositories:that one may want out of the box
-#This function adds the repositories needed for the installation of 
-function addTheRepositoriesRequiredForTheInstallationOfThePrerequisites{
-
-}
-
-function ensureBashIsHeartbleedProof{
-
 }
 
 checkThatYouAreRoot

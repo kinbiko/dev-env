@@ -1,7 +1,7 @@
 # dev-env
 Generic development environment on debian.
 __Pre-requisites__: Git
-##Installation To install: (*READ AND UNDERSTAND THE SCRIPT IN THE LINK BELOW BEFORE PASTING INTO A SHELL*) `curl https://raw.githubusercontent.com/kinbiko/dev-env/master/install-prerequisites.sh | bash`
+##Installation To install: (*READ AND UNDERSTAND THE SCRIPT IN THE LINK BELOW BEFORE PASTING INTO A SHELL*) `curl https://raw.githubusercontent.com/kinbiko/dev-env/master/prerequisites.sh | bash`
 
 ## Outline
 
@@ -9,7 +9,7 @@ __Pre-requisites__: Git
 This is the first shell script that should be run on a brand new debian installation.
 It:
 - Updates the repository and upgrades the current system.
-- Bash: ensures the version is heartbleed safe
+- Bash: ensures the version is shellshock safe
 - Installs a RDP/VNC server.
 - Creates a new user with a provided username, and establishes authentication against LDAP
 
@@ -17,10 +17,7 @@ It:
 Installs:
 - Docker
 - Chrome
-Removes:
-- IceWeasel
-- Thunderbird
-    
+
 ##install-java.sh
 Installs:
 - Java 8, and not the openJDK one.
