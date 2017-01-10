@@ -1,10 +1,7 @@
 # dev-env
 Generic development environment on debian.
 __Pre-requisites__: Git
-
-##Installation
-To install: (*READ AND UNDERSTAND THE SCRIPT IN THE LINK BELOW BEFORE PASTING INTO A SHELL*)
-`curl https://raw.githubusercontent.com/kinbiko/dev-env/master/install-prerequisites.sh | bash`
+##Installation To install: (*READ AND UNDERSTAND THE SCRIPT IN THE LINK BELOW BEFORE PASTING INTO A SHELL*) `curl https://raw.githubusercontent.com/kinbiko/dev-env/master/install-prerequisites.sh | bash`
 
 ## Outline
 
@@ -18,11 +15,11 @@ It:
 
 ##install-common.sh
 Installs:
-    - Docker
-    - Chrome
+- Docker
+- Chrome
 Removes:
-    - IceWeasel
-    - Thunderbird
+- IceWeasel
+- Thunderbird
     
 ##install-java.sh
 Installs:
@@ -33,18 +30,18 @@ Installs:
 - IDE, prompt for
     - IntelliJ IDEA
     - Eclipse
-    - None/instal manually
+    - None/install manually
 
 ##install-extras.sh
 - Text editor, prompt for
     - Notepad++
     - Atom
     - Vim 8
-tmux
-htop
-zsh - and enable by default
-ctags
-zeal
-node
-python3
+- tmux
+- htop
+- zsh - and enable by default
+- ctags
+- zeal
+- node
+- python3
 
