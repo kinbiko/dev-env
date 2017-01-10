@@ -25,3 +25,4 @@ sudo apt-get update > /dev/null
 ### Installation ###
 echo "Installing docker"
 sudo apt-get -y install docker-engine
+sudo apt-get -y install bridge-utils
