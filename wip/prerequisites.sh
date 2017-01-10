@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#Only run this script as root.
 checkThatYouAreRoot
+
 #If this fails, the bash version - and therefore probably also the OS,
 #is too old and unsafe to be suited as a development environment.
 if [ "$(sh ./shellshock-check.sh)" = VULNERABLE ]; then
@@ -26,7 +26,6 @@ function checkThatYouAreRoot {
     fi
 }
 
-checkThatYouAreRoot
 apt-get update
 apt-get upgrade
 
