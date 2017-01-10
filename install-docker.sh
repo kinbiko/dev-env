@@ -17,7 +17,7 @@ sudo apt-key adv \
     --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 
 echo "Updating the repository list for Docker"
-sudo echo "deb https://apt.dockerproject.org/repo debian-jessie main" > /etc/apt/sources.list.d/docker.list
+sudo sh -c echo "deb https://apt.dockerproject.org/repo debian-jessie main" > /etc/apt/sources.list.d/docker.list
 
 echo "Updating package repositories"
 sudo apt-get update > /dev/null
