@@ -30,3 +30,6 @@ sudo apt-get -y install bridge-utils > /dev/null
 
 echo "starting the docker daemon"
 sudo service docker start 
+sudo usermod -aG docker $(whoami)
+echo "Installation complete."
+echo "Please log out and log in to start running Docker commands"
