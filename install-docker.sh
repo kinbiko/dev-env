@@ -16,7 +16,7 @@ sudo apt-get -y install apt-transport-https ca-certificates gnupg2
 echo "Adding keys for Docker"
 sudo apt-key adv \
     --keyserver hkp://ha.pool.sks-keyservers.net:80 \
-    --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+    --recv-keys 58118E89F3A912897C070ADBF76221572C52609D > /dev/null
 
 echo "Updating the repository list for Docker"
 sudo sh -c 'echo "deb https://apt.dockerproject.org/repo debian-jessie main" > /etc/apt/sources.list.d/docker.list'
@@ -29,7 +29,7 @@ sudo apt-get -y install docker-engine > /dev/null
 sudo apt-get -y install bridge-utils > /dev/null
 
 echo "starting the docker daemon"
-sudo service docker start 
+sudo service docker start > /dev/null
 sudo usermod -aG docker $(whoami)
 echo "Installation complete."
 echo "Please log out and log in to start running Docker commands"
