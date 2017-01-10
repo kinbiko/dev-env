@@ -11,7 +11,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886 
 echo "Updating package list to find Oracle Java"
 sudo apt-get update > /dev/null
 echo "Downloading and starting installer."
-sudo apt-get install oracle-java8-installer
+sudo apt-get -y install oracle-java8-installer
 echo "Java compiler version:"
 javac -version
 echo "Java version:"
