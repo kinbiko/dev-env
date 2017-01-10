@@ -10,7 +10,7 @@ echo "Moving maven installation to /opt/"
 sudo mv apache-maven-3.3.9 /opt/
 
 echo "adding the maven path to the path"
-echo "export PATH=$PATH:/usr/sbin/" >> ~/.bashrc
+echo "export PATH=$PATH:/opt/apache-maven-3.3.9/bin/" >> ~/.bashrc
 
 #The following allows the users to use Maven immediately
 export PATH=$PATH:/opt/apache-maven-3.3.9/bin
