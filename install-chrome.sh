@@ -8,4 +8,4 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 sudo apt-get update
 
 #install the stable version:
-sudo apt-get install google-chrome-stable
+sudo apt-get -y install google-chrome-stable

@@ -2,6 +2,10 @@
 Generic development environment on debian.
 __Pre-requisites__: Git
 
+##Installation
+To install: (*READ AND UNDERSTAND THE SCRIPT IN THE LINK BELOW BEFORE PASTING INTO A SHELL*)
+`curl https://raw.githubusercontent.com/kinbiko/dev-env/master/install-prerequisites.sh | bash`
+
 ## Outline
 
 ### install-prerequisites.sh
@@ -14,11 +18,11 @@ It:
 
 ##install-common.sh
 Installs:
-    Docker
-    Chrome
+    - Docker
+    - Chrome
 Removes:
-    IceWeasel
-    Thunderbird
+    - IceWeasel
+    - Thunderbird
     
 ##install-java.sh
 Installs:
