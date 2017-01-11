@@ -30,7 +30,7 @@ Configures your system with some convenient user-specific settings that allow fo
 ##extras/
 These scripts are entirely optional. 
 If you don't know what it is, you probably won't need it.
-- [ ] Atom: Free and Open Source text editor by the developers at Github
+- [x] Atom: Free and Open Source text editor by the developers at Github
 - [ ] Vim 8: Command-line text editor, updated to the most recent version
 - [x] tmux: Terminal multiplexer.
 - [ ] htop: System process monitor - a prettier and more user friendly version of top.
