@@ -23,7 +23,7 @@ make configure
 echo "Compiling Git..."
 make all 
 echo "Installing Git..."
-make install 
+sudo make install 
 
 echo "Removing tarball"
 cd ~
