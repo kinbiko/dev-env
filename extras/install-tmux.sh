@@ -11,8 +11,9 @@ tar -zxf tmux-$VERSION.tar.gz
 
 cd tmux-$VERSION
 
-#Install the dependencies for building tmux from scratch
-sudo apt-get build-dep tmux
+#Install the dependencies for building tmux from source
+echo "Installing Tmux build dependencies"
+sudo apt-get -y build-dep tmux > /dev/null
 
 echo "Configuring the build..."
 ./configure --prefix=/usr
@@ -20,6 +21,7 @@ echo "Configuring the build..."
 echo "Compiling Tmux"
 make all > /dev/null
 
+"Installing Tmux"
 sudo make install > /dev/null
 
 echo "Removing temporary files..."
