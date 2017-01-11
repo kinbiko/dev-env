@@ -9,7 +9,7 @@ echo "Installing Atom..."
 sudo dpkg --install atom-amd64.deb > /dev/null
 
 echo "Removing temporary files..."
-rm atom-atom64.deb
+rm atom-amd64.deb
 
 echo "Atom has been installed."
 
