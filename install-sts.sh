@@ -2,7 +2,7 @@
 
 STS_VERSION=3.8.3.RELEASE
 ECLIPSE_VERSION=4.6.2
-ECLIPSE_SHORT_VERSION=4.2 #Major.minor semver notation, relative to the above
+ECLIPSE_SHORT_VERSION=4.6 #Major.minor semver notation, relative to the above
 
 FILENAME=spring-tool-suite-$STS_VERSION-e$ECLIPSE_VERSION-linux-gtk-x86_64.tar.gz
 
