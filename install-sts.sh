@@ -9,7 +9,7 @@ FILENAME=spring-tool-suite-$STS_VERSION-e$ECLIPSE_VERSION-linux-gtk-x86_64.tar.g
 cd ~
 
 echo "Downloading STS..."
-wget http://download.springsource.com/release/STS/$STS_VERSION/dist/e$ECLIPSE_SHORT_VERSION/$FILENAME > /dev/null/
+wget http://download.springsource.com/release/STS/$STS_VERSION/dist/e$ECLIPSE_SHORT_VERSION/$FILENAME > /dev/null
 
 echo "Extracting tarball..."
 tar -zxf $FILENAME
