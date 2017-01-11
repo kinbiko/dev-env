@@ -41,10 +41,10 @@ If you don't know what it is, you probably won't need it.
 
 ## Low-level scripts
 - java/
-    [x] `install-java-8.sh` installs the Oracle Java 8 (not OpenJDK). This scripts requires interaction to accept the licence agreement
-    [x] `install-maven.sh` installs the latest version of Maven at the time of writing. The apt repositories do contain a version of maven, but it's outdated.
-    [x] `install-sts.sh` installs the latest version of Spring Tool Suite at the time of writing.
+    - [x] `install-java-8.sh` installs the Oracle Java 8 (not OpenJDK). This scripts requires interaction to accept the licence agreement
+    - [x] `install-maven.sh` installs the latest version of Maven at the time of writing. The apt repositories do contain a version of maven, but it's outdated.
+    - [x] `install-sts.sh` installs the latest version of Spring Tool Suite at the time of writing.
 - common/
-    [x] `install-chrome.sh` Installs the most recent version of Google Chrome as available on Linux(Ubuntu really, but should work on Debian too).
-    [x] `install-docker.sh` installs the Docker Engine and the Docker Daemon.
-    [x] `install-git.sh` Installs a more recent version of Git than what is available in the apt repositories at the time of writing.
+    - [x] `install-chrome.sh` Installs the most recent version of Google Chrome as available on Linux(Ubuntu really, but should work on Debian too).
+    - [x] `install-docker.sh` installs the Docker Engine and the Docker Daemon.
+    - [x] `install-git.sh` Installs a more recent version of Git than what is available in the apt repositories at the time of writing.
