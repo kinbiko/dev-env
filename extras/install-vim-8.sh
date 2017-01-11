@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing build VIM dependencies"
-sudo apt-get -y install gcc ncurses
+sudo apt-get -y install gcc ncurses-dev
 
 echo "Downloading source code..."
 cd ~
