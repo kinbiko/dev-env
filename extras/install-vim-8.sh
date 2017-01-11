@@ -19,5 +19,6 @@ sudo make install > /dev/null
 echo "Removing temporary files..."
 cd ~
 rm master.zip
+rm -rf vim-master
 
 echo "Most recent version of VIM is now installed"
