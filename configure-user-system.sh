@@ -6,4 +6,4 @@ echo "export PATH=$PATH:/usr/sbin/" >> ~/.bashrc
 #Some installations may decide to search the installation drive
 #for any of its dependencies(E.g. Docker). This should preferably
 #be downloaded from the internet instead.
-sed -i '/cdrom/d' /etc/apt/sources.list
+sudo sed -i '/cdrom/d' /etc/apt/sources.list
