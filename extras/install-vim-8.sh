@@ -10,7 +10,7 @@ unzip master.zip
 
 cd vim-master/src/
 echo "Configuring VIM build..."
-./configure > /dev/null
+./configure --prefix=/usr > /dev/null
 echo "Building VIM..."
 make > /dev/null
 echo "Installing VIM..."
