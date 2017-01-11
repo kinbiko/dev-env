@@ -33,7 +33,7 @@ If you don't know what it is, you probably won't need it.
 - [x] Atom: Free and Open Source text editor by the developers at Github
 - [ ] Vim 8: Command-line text editor, updated to the most recent version
 - [x] tmux: Terminal multiplexer.
-- [ ] htop: System process monitor - a prettier and more user friendly version of top.
+- [x] htop: System process monitor - a prettier and more user friendly version of top.
 - [ ] zsh: A more developer-friendly alternative to bash. Installing this will set zsh as your default shell.
 - [ ] ctags: 'Typing' for text editors and tools that support ctags.
 - [ ] zeal: Local documentation store lookup tool, similar to Velocity on Windows and Dash on OSX/Mac OS.
