@@ -1,27 +1,29 @@
 #!/bin/bash
 
+#To update git, update this number and run script
+VERSION=2.11.0
+
+cd ~
 echo "Installing the compile dependencies for Git"
-sudo apt-get install -y gcc 
-sudo apt-get install -y autoconf 
+sudo apt-get install -y gcc autoconf libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
 
 echo "Grabbing git tarball from kernel.org"
-cd ~
-wget https://www.kernel.org/pub/software/scm/git/git-2.11.0.tar.gz 
+wget https://www.kernel.org/pub/software/scm/git/git-$VERSION.tar.gz 
 
 echo "Extracting tarball"
-tar xzvf git-2.11.0.tar.gz 
+tar xzvf git-$VERSION.tar.gz 
 
-cd git-2.11.0
+cd git-$VERSION
 
 echo "Configuring build"
 make configure 
 
-sudo sh -c "./configure --prefix=/usr"
+./configure --prefix=/usr
 
 echo "Compiling Git..."
 make all 
 echo "Installing Git..."
-sudo make install 
+make install 
 
 echo "Removing tarball"
 cd ~
