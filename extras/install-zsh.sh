@@ -28,4 +28,8 @@ echo "Setting zsh as the default shell..."
 which zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(which zsh)" "${USER}" > /dev/null
 
-echo "Installation complete!"
+rm -rf download zsh-$VERSION
+
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+echo "Installation complete! Log out and back in to use Zsh as your default shell."
