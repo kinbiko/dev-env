@@ -5,6 +5,8 @@ VERSION=5.3
 echo "Installing zsh build dependencies"
 sudo apt-get -y install build-essential ncurses-dev yodl autoconf
 
+cd ~
+
 echo "Downloading source for zsh..."
 wget http://sourceforge.net/projects/zsh/files/zsh/$VERSION/zsh-$VERSION.tar.gz/download > /dev/null
 echo "Extracting zsh source code..."
@@ -28,6 +30,8 @@ echo "Setting zsh as the default shell..."
 which zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(which zsh)" "${USER}" > /dev/null
 
+echo "Removing temporary files"
+cd ~
 rm -rf download zsh-$VERSION
 
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
