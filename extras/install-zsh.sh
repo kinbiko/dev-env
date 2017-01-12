@@ -1,6 +1,7 @@
 #!/bin/bash
 
 VERSION=5.3
+MAVEN_VERSION=3.3.9
 
 echo "Installing zsh build dependencies"
 sudo apt-get -y install build-essential ncurses-dev yodl autoconf
@@ -39,6 +40,6 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 #Ensure that you have the 'service' command available in zsh.
 echo "export PATH=$PATH:/usr/sbin/" >> ~/.zshrc
 echo "adding the maven path to the path"
-echo "export PATH=$PATH:/opt/apache-maven-$VERSION/bin/" >> ~/.zshrc
+echo "export PATH=$PATH:/opt/apache-maven-$MAVEN_VERSION/bin/" >> ~/.zshrc
 
 echo "Installation complete! Log out and back in to use Zsh as your default shell."
