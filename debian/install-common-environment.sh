@@ -1,9 +1,9 @@
 #!/bin/bash
 
-("./configure-user-system.sh")
+("../agnostic/configure-user-system.sh")
 
 ("./common/install-docker.sh")
-("./common/install-chrome.sh")
-("./common/install-git.sh")
+("../agnostic/common/install-chrome.sh")
+("../agnostic/common/install-git.sh")
 
 echo "Docker, Google-Chrome and Git is now installed."
