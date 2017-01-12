@@ -38,6 +38,7 @@ If you don't know what it is, you probably won't need it.
       and also install the popular oh-my-zsh
 - [x] ctags: 'Typing' for text editors and tools that support ctags.
 - [ ] zeal: Local documentation store lookup tool, similar to Velocity on Windows and Dash on OSX/Mac OS.
+- [x] tree: Command-line utility for displaying files in a directory as a tree structure
 - [ ] node: NodeJS and NPM.
 
 ## Low-level scripts
