@@ -1,8 +1,8 @@
 # dev-env
-Generic development environment on debian.
+Generic development environment on Debian and Ubuntu.
 Each script refers to one application. Most scripts can be easily up- or downgraded by opening the shell scripts and setting the `VERSION` variables.
-Although this is not guaranteed as it depends on the vendors of each of these applications.
-All default configurations of these scripts have been verified against a clean installation of Debian Jessie 3.16.0.
+Although this is not guaranteed as it depends on the vendors of each of these applications. Most scripts are distro-agnostic, but some are not, e.g. Docker and Tmux.
+All default configurations of these scripts have been verified against a clean installation of Debian Jessie 3.16.0 and Ubuntu 16.04 LTS respectively.
 
 ##Installation instructions: 
 Assuming you are a user with sudo access:
@@ -10,7 +10,7 @@ Download this repository as a zip, or use `git clone` to download.
 Ensure you run `./configure-user-system.sh` or a high level script before running any of the low level scripts.
 
 ## High-level scripts
-Run the scripts by 'dot-slashing' in a bash shell in the top level directory of this repository.
+Run the scripts by 'dot-slashing' in a bash shell in the top level directory of the distro-specific folders of this repository, e.g. `debian/`.
 
 ##`install-common-environment.sh`
 Installs:
