@@ -30,7 +30,7 @@ echo "Configuring the build..."
 echo "Compiling Tmux"
 make all > /dev/null
 
-"Installing Tmux"
+echo "Installing Tmux"
 sudo make install > /dev/null
 
 echo "Removing temporary files..."
