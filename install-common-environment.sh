@@ -2,7 +2,7 @@
 
 read -p "Distro ('debian' or 'ubuntu'): " distro
 
-("./agnostic/configure-user-system.sh")
+("./configure-user-system.sh")
 
 ("./$distro/common/install-docker.sh")
 ("./agnostic/common/install-chrome.sh")

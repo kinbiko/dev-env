@@ -1,6 +1,6 @@
 #!/bin/bash
 
-("./agnostic/configure-user-system.sh")
+("./configure-user-system.sh")
 
 ("./agnostic/java/install-java-8.sh")
 ("./agnostic/java/install-maven.sh")
