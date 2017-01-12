@@ -38,5 +38,7 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 
 #Ensure that you have the 'service' command available in zsh.
 echo "export PATH=$PATH:/usr/sbin/" >> ~/.zshrc
+echo "adding the maven path to the path"
+echo "export PATH=$PATH:/opt/apache-maven-$VERSION/bin/" >> ~/.zshrc
 
 echo "Installation complete! Log out and back in to use Zsh as your default shell."
