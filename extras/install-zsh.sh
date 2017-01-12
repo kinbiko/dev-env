@@ -36,4 +36,7 @@ rm -rf download zsh-$VERSION
 
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+#Ensure that you have the 'service' command available in zsh.
+echo "export PATH=$PATH:/usr/sbin/" >> ~/.zshrc
+
 echo "Installation complete! Log out and back in to use Zsh as your default shell."
