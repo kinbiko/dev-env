@@ -4,7 +4,7 @@ Each script refers to one application. Most scripts can be easily up- or downgra
 Although this is not guaranteed as it depends on the vendors of each of these applications. Most scripts are distro-agnostic, but some are not, e.g. Docker.
 All default configurations of these scripts have been verified against a clean installation of Debian Jessie 3.16.0 and Ubuntu 16.04 LTS respectively.
 
-##Installation instructions: 
+## Installation instructions: 
 Assuming you are a user with sudo access:
 Download this repository as a zip, or use `git clone` to download.
 Ensure you run `./configure-user-system.sh` or a high level script before running any of the low level scripts.
@@ -12,22 +12,22 @@ Ensure you run `./configure-user-system.sh` or a high level script before runnin
 ## High-level scripts
 Run the scripts by 'dot-slashing' in a bash shell in the top level directory this repository.
 
-##`install-common-environment.sh`
+## `install-common-environment.sh`
 Installs:
 - Docker
 - Chrome
 - Git
 
-##`install-java-environment.sh`
+## `install-java-environment.sh`
 Installs:
 - Java 8, (Oracle, not OpenJDK)
 - Maven
 - Eclipse: (STS)
 
-##`configure-user-system.sh` 
+## `configure-user-system.sh` 
 Configures your system with some convenient user-specific settings that allow for a smoother installation experience. :)
 
-##extras/
+## extras/
 These scripts are entirely optional. 
 If you don't know what it is, you probably won't need it.
 - [x] Atom: Free and Open Source text editor by the developers at Github
